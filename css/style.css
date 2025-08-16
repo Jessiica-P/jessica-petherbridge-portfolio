@@ -17,8 +17,73 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-primary);
 }
 
+.site-header {
+  margin-bottom: var(--space-l);
+  text-align: left;
+}
+
+.site-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-title);
+  color: var(--color-primary-dark);
+}
+
+.site-subtitle {
+  font-size: var(--text-l);
+  color: var(--color-secondary-dark);
+}
+
 /*  Links */
 a {
   color: var(--color-primary);
   text-decoration: underline;
+}
+
+/* Tabs */
+.tab-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-m);
+}
+
+.tabs {
+  display: flex;
+  gap: var(--space-s);
+  margin-bottom: var(--space-m);
+}
+
+.tab {
+  border: none;
+  background: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: var(--text-m);
+  padding: var(--space-s) var(--space-l);
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  transition: background 0.2s;
+}
+
+.tab:hover,
+.tab:focus {
+  background: var(--color-primary-dark);
+}
+
+.tab.active {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+  padding: var(--space-m);
+  border-top: 2px solid var(--color-secondary);
+  background: #fff;
+  border-radius: 0 0 12px 12px;
+}
+
+.tab-content.active {
+  display: block;
 }

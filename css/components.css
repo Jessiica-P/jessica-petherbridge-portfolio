@@ -1,0 +1,48 @@
+/* Button Component */
+.btn {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: var(--text-m);
+  font-weight: 600;
+  padding: var(--space-xs);
+  border: none;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  box-shadow: var(--shadow-md);
+}
+
+/* NavBar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-s) var(--space-m);
+  border-bottom: 2px solid var(--color-primary-dark);
+  font-family: var(--font-heading);
+  color: var(--color-secondary-dark);
+}
+.navbar a {
+  font-size: var(--text-m);
+  color: var(--color-text);
+  margin-left: var(--space-m);
+}
+.navbar a:hover {
+  color: var(--color-primary);
+}
+
+/* Shadows */
+.shadow-sm{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+} 
+
+.shadow-md{
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
